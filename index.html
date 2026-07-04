@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing Page</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🛍 Product Store</h1>
+    <div class="search-box">
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="🔍 Search Products..."
+    >
+</div>
+
+    <!-- Filter Section -->
+    <div class="controls">
+
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Fashion">Fashion</option>
+            <option value="Books">Books</option>
+        </select>
+
+        <select id="priceFilter">
+            <option value="all">All Prices</option>
+            <option value="1000">Under ₹1000</option>
+            <option value="5000">Under ₹5000</option>
+            <option value="10000">Under ₹10000</option>
+            <option value="50000">Under ₹50000</option>
+            <option value="100000">Under ₹100000</option>
+        </select>
+
+        <select id="sortOption">
+            <option value="default">Sort By</option>
+            <option value="rating">Highest Rating</option>
+            <option value="lowToHigh">Price : Low to High</option>
+            <option value="highToLow">Price : High to Low</option>
+        </select>
+
+    </div>
+    <div id="productContainer" class="products"></div>
+
+    <!-- Product Cards -->
+    <div id="productContainer" class="products">
+
+    </div>
+
+</div>
+
+<!-- Product Details Modal -->
+
+<div id="productModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close">&times;</span>
+
+        <div id="modalBody"></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
